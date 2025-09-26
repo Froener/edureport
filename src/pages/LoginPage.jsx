@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 // Componente funcional da página de login
 const LoginPage = () => {
   return (
@@ -117,7 +119,7 @@ const LoginPage = () => {
 
           {/* Link para cadastro */}
           <p className="text-xs text-center mt-5">
-            Não tem uma conta? <a href="#" className="text-blue-600 hover:underline">Cadastre-se aqui</a>
+            Não tem uma conta? <NavLink to="/signup"><a href="#" className="text-blue-600 hover:underline">Cadastre-se aqui</a></NavLink>
           </p>
         </div>
       </div>
